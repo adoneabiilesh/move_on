@@ -8,7 +8,7 @@ import CartIcon from "./CartIcon";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { ClerkLoaded, SignedIn, SignInButton, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { CircleFadingArrowUp, ListOrdered } from "lucide-react";
+import { ListOrdered } from "lucide-react";
 import { getAllCategories, getMyOrders } from "@/sanity/helpers/queries";
 
 const Header = async () => {
