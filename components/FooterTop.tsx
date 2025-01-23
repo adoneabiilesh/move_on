@@ -8,29 +8,29 @@ interface Props {
 }
 const data: Props[] = [
   {
-    title: "Visit Us",
-    subtitle: "New Orlean, USA",
+    title: "Address",
+    subtitle: "Mukkattukara, Unity Nagar, Mukkattukara, Thrissur, Kerala 680651, India",
     icon: (
       <MapPin className="text-gray-600 group-hover:text-darkColor transition-colors" />
     ),
   },
   {
     title: "Call Us",
-    subtitle: "+12 958 648 597",
+    subtitle: "+91 487 237 0142",
     icon: (
       <Phone className="text-gray-600 group-hover:text-darkColor transition-colors" />
     ),
   },
   {
     title: "Working Hours",
-    subtitle: "Mon - Sat: 10:00 AM - 7:00 PM",
+    subtitle: "Mon - Sat: 09:00 AM - 08:00 PM",
     icon: (
       <MapPin className="text-gray-600 group-hover:text-darkColor transition-colors" />
     ),
   },
   {
     title: "Email Us",
-    subtitle: "tulos@gmail.com",
+    subtitle: "info@gmail.com",
     icon: (
       <MapPin className="text-gray-600 group-hover:text-darkColor transition-colors" />
     ),
