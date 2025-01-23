@@ -1,102 +1,88 @@
 'use client'
 
-import Image from 'next/image'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Search } from 'lucide-react'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
-import { Input } from "@/components/ui/input"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
     <div className="space-y-8 mb-10">
-      <Carousel className="w-full">
-        <CarouselContent>
-          {/* First Slide */}
-          <CarouselItem>
-            <div className="relative h-[500px] md:h-[600px] w-full">
-              <Image
-                src="/images/4.jpg"
-                alt="Eco-friendly gardening"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 flex items-center">
-                <div className="container mx-auto px-4">
-                  <div className="max-w-2xl space-y-6">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white">
-                      Sustainable Gardening Solutions
-                    </h1>
-                    <p className="text-xl text-white">
-                      Shop our eco-friendly range of gardening supplies and equipment
-                    </p>
-                    <div className="flex gap-4">
-                      <Link href="/category/flower-pot">
-                        <Button size="lg" variant="default">
-                          Shop Now
-                        </Button>
-                      </Link>
-                      <Link href="/category/flower-pot">
-                        <Button size="lg" variant="outline" className="bg-green-500 hover:bg-white">
-                          View All Products
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
+      {/* Carousel Section */}
+      <div className="w-full">
+        {/* First Slide */}
+        <div className="relative h-[500px] md:h-[600px] w-full">
+          <Image
+            src="/images/4.jpg"
+            alt="Eco-friendly gardening"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 flex items-center">
+            <div className="container mx-auto px-4">
+              <div className="max-w-2xl space-y-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-white">
+                  Sustainable Gardening Solutions
+                </h1>
+                <p className="text-xl text-white">
+                  Shop our eco-friendly range of gardening supplies and equipment
+                </p>
+                <div className="flex gap-4">
+                  <Link href="/category/flower-pot">
+                    <Button size="lg" variant="default">
+                      Shop Now
+                    </Button>
+                  </Link>
+                  <Link href="/category/flower-pot">
+                    <Button size="lg" variant="outline" className="bg-green-500 hover:bg-white">
+                      View All Products
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
-          </CarouselItem>
-          
-          {/* Second Slide */}
-          <CarouselItem>
-            <div className="relative h-[500px] md:h-[600px] w-full">
-              <Image
-                src="/images/3.jpg"
-                alt="Garden equipment"
-                fill
-                className="object-cover"
-                priority
-              />
-              <div className="absolute inset-0 bg-black/30" />
-              <div className="absolute inset-0 flex items-center">
-                <div className="container mx-auto px-4">
-                  <div className="max-w-2xl space-y-6">
-                    <h1 className="text-4xl md:text-6xl font-bold text-white">
-                      Professional Grade Tools
-                    </h1>
-                    <p className="text-xl text-white">
-                      Quality equipment for every gardening enthusiast
-                    </p>
-                    <div className="flex gap-4">
-                      <Link href="/category/flower-pot">
-                        <Button size="lg" variant="default">
-                          Shop Now
-                        </Button>
-                      </Link>
-                      <Link href="/category/flower-pot">
-                        <Button size="lg" variant="outline" className="bg-green-500 hover:bg-white">
-                          View All Products
-                        </Button>
-                      </Link>
-                    </div>
-                  </div>
+          </div>
+        </div>
+        
+        {/* Second Slide */}
+        <div className="relative h-[500px] md:h-[600px] w-full">
+          <Image
+            src="/images/3.jpg"
+            alt="Garden equipment"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 flex items-center">
+            <div className="container mx-auto px-4">
+              <div className="max-w-2xl space-y-6">
+                <h1 className="text-4xl md:text-6xl font-bold text-white">
+                  Professional Grade Tools
+                </h1>
+                <p className="text-xl text-white">
+                  Quality equipment for every gardening enthusiast
+                </p>
+                <div className="flex gap-4">
+                  <Link href="/category/flower-pot">
+                    <Button size="lg" variant="default">
+                      Shop Now
+                    </Button>
+                  </Link>
+                  <Link href="/category/flower-pot">
+                    <Button size="lg" variant="outline" className="bg-green-500 hover:bg-white">
+                      View All Products
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
-          </CarouselItem>
-        </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
-      </Carousel>
+          </div>
+        </div>
+      </div>
 
       {/* Search Bar Section 
       <div className="container mx-auto px-4">
@@ -145,30 +131,3 @@ export function HeroSection() {
     </div>
   )
 }
-
-const categories = [
-  {
-    name: "Plastic Pot",
-    count: 156,
-    href: "/",
-    imageUrl: "/images/1.webp",
-  },
-  {
-    name: "Hanging Pot",
-    count: 83,
-    href: "/",
-    imageUrl: "/images/1.webp",
-  },
-  {
-    name: "Flower Pot",
-    count: 245,
-    href: "/",
-    imageUrl: "/images/1.webp",
-  },
-  {
-    name: "Grow Bag",
-    count: 67,
-    href: "/",
-    imageUrl: "/images/1.webp",
-  },
-]

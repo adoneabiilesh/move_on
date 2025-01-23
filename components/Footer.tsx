@@ -53,7 +53,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-semibold text-darkColor mb-4">Newsletter</h3>
+            <h3 className="text-center md:text-left">Let&apos;s stay in touch</h3>
             <p className="text-gray-600 text-sm mb-4">
               Subscribe to our newsletter to receive updates and exclusive
               offers.
