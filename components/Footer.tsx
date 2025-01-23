@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="space-y-4">
             <Logo>VincePlastics</Logo>
             <p className="text-gray-600 text-sm">
-            Vince Plastics" was incorporated in the year 1990, with a declaration to provide the precisely manufactured products to clients. We are a Proprietor owned entity which is performing its occupational activities in a proficient manner in the field of Manufacturer. The products spectrum we offer to our customers includes Plastic Pot,Pot Plate,Hanging Pot,Plastic Hanging Flower Pot Clip and many more. We are dedicated to constant improvement and up-gradation, which helps us to evolve in totally and assist to take our company on new heights.
+            Vince Plastics&quot; was incorporated in the year 1990, with a declaration to provide the precisely manufactured products to clients. We are a Proprietor owned entity which is performing its occupational activities in a proficient manner in the field of Manufacturer. The products spectrum we offer to our customers includes Plastic Pot,Pot Plate,Hanging Pot,Plastic Hanging Flower Pot Clip and many more. We are dedicated to constant improvement and up-gradation, which helps us to evolve in totally and assist to take our company on new heights.
             </p>
             <SocialMedia
               className="text-darkColor/60"
